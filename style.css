@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+}
+
+.section_color { 
+    flex: 3;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #aa9838 ;
+    border-bottom: 3px solid #465d13;
+}
+
+.redes {
+    flex: 1; 
+    display: flex;
+    list-style: none;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes_link .fa-brands{
+    text-decoration: none;
+    color: #465d13;
+    font-size: 3.5rem;
+}
+
+.section_imagen {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.img_perfil {
+    width: 50%;
+    border-radius: 50%;
+    border: 1px solid #465d13;  
+}
+
+.section_texto { 
+    flex: 3 ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lumanosimo', cursive;
+    background-color: #ebc3ae;
+}
+
+.nombre {
+    flex: 1; 
+    font-family: 'Kalam', cursive; 
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    padding: 0.75rem;
+    margin-top: 1rem;
+}
+
+.info {
+    flex: 2; 
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    align-items: center;
+}
+
+.listado_fotos {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ccbf9f;
+    border: 3px solid #a68a5a;
+}
+
+.img_sepia {
+    height: 25rem;
+    border-radius: 30px;
+    border: 1px solid #a68a5a;
+
+}
+
+
+
+/* .color1 { #aa9838 };
+.color2 { #ebc3ae };
+.color3 { #465d13 };
+.color4 { #a68a5a };
+.color5 { #ccbf9f }; */
