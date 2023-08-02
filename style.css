@@ -15,8 +15,8 @@ html {
 }
 
 .section_color { 
-    flex: 3;
-    padding: 1.5rem;
+    width: 100%;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,9 +26,9 @@ html {
 }
 
 .redes {
-    flex: 1; 
     display: flex;
     list-style: none;
+    margin-top:1.5rem;
     width: 60%;
     justify-content: space-around;
     align-items: center;
@@ -40,23 +40,26 @@ html {
     font-size: 3.5rem;
 }
 
+.redes_link:hover > .fa-brands{
+    color: #ccbf9f;
+}
+
 .section_imagen {
-    flex: 1.5;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    margin: 1.5rem;
 }
 
 .img_perfil {
-    width: 50%;
+    width: 60%;
     border-radius: 50%;
     border: 1px solid #465d13;  
 }
 
-.section_texto { 
-    flex: 3 ;
-
+.section_texto {
+    width: 100%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,43 +69,79 @@ html {
 }
 
 .nombre {
-    flex: 1; 
     font-family: 'Kalam', cursive; 
     text-transform: uppercase;
     font-size: 2.5rem;
-    padding: 0.75rem;
-    margin-top: 1rem;
+    padding: 1.75rem;
+    margin-top: 1.5rem;
 }
 
 .info {
-    flex: 2; 
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     text-align: center;
     align-items: center;
+    padding: 0.5rem;
+}
+
+.info_parrafo {
+    margin-bottom: 1rem;
 }
 
 .listado_fotos {
     width: 100%;
-    height: 30rem;
+    height: 20vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #ccbf9f;
-    border: 3px solid #a68a5a;
+    border-top: 3px solid #a68a5a;
+    bottom: 0;
 }
 
 .img_sepia {
-    height: 25rem;
-    border-radius: 30px;
+    width: 30%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 20px;
     border: 1px solid #a68a5a;
-
 }
 
+footer {
+    height: 10vh;
+    background-color: #aa9838;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-top: 3px solid #465d13;
+    font-family: 'Lumanosimo', cursive;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section_color {
+        width: 50%; 
+        border-bottom: none;
+        border-right: 3px solid #465d13;
+    }
+
+    .section_texto {
+        width: 50%;
+    }
+  }
 
 
-/* .color1 { #aa9838 };
+
+/* paleta de colores 
+.color1 { #aa9838 };
 .color2 { #ebc3ae };
 .color3 { #465d13 };
 .color4 { #a68a5a };
-.color5 { #ccbf9f }; */
+.color5 { #ccbf9f };
+ */
