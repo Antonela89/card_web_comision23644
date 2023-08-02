@@ -28,7 +28,7 @@ html {
 .redes {
     display: flex;
     list-style: none;
-    margin-top:1.5rem;
+    margin-top: 1.5rem;
     width: 60%;
     justify-content: space-around;
     align-items: center;
@@ -53,6 +53,7 @@ html {
 
 .img_perfil {
     width: 60%;
+    object-fit: cover;
     border-radius: 50%;
     border: 1px solid #465d13;  
 }
@@ -121,18 +122,68 @@ footer {
 
 @media only screen and (min-width: 768px) {
     .container {
-        display: flex;
         flex-direction: row;
+        align-items:flex-start;
+        position: relative;
     }
 
     .section_color {
-        width: 50%; 
+        width: 42.5vw;
+        height: 90vh;
         border-bottom: none;
+        background-color: #a68a5a;
         border-right: 3px solid #465d13;
     }
 
+    .redes {
+        position: absolute;
+        top: 0;
+        margin-top: 4.5rem;
+        width: 25%;
+    }
+
+    .section_imagen {
+        margin: 0;
+    }
+
+    .img_perfil{
+        width: 30vw;
+        height: 50vh;
+        border-radius: 20px;
+        border: 2px solid #465d13;  
+    }
+
     .section_texto {
-        width: 50%;
+        width: 42.5vw;
+        height: 90vh;
+        right: 0;
+        position: absolute;
+    }
+    
+    .nombre {
+        font-size: 5rem;
+    }
+
+    .listado_fotos {
+        position: absolute;
+        left: -15vw;
+        width: 15vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #465d13;
+    }
+
+    .img_sepia {
+        height: 25vh;
+        width: 10vw;
+    }
+
+    footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0; 
+        height: 10h;
     }
   }
 
